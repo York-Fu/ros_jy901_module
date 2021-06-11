@@ -18,7 +18,7 @@ int main(int argc, char **argv)
   ros::init(argc, argv, "jy901Module_node");
   ros::NodeHandle n;
 
-  std::vector<std::string> portStrVec{"/dev/ttyUSB1", "/dev/ttyUSB2", "/dev/ttyUSB3"};
+  std::vector<std::string> portStrVec{"/dev/ttyUSB2", "/dev/ttyUSB3", "/dev/ttyUSB1"};
   int ret = 0;
   for(uint8_t i = 0; i < portStrVec.size(); i++) 
   {
