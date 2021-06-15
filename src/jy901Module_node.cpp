@@ -28,6 +28,10 @@ int main(int argc, char **argv)
       ROS_ERROR("error: jy901_init %s failed!", portStrVec[i].c_str());
       jy901_close();
     }
+    else
+    {
+      break;
+    }
   }
   if(ret == -1)
     exit(EXIT_FAILURE);
